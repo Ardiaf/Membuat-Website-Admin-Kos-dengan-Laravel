@@ -1,4 +1,5 @@
 <!doctype html>
+@extends('layout')
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -17,21 +18,8 @@
  
 <body> 
 <!-- Header-->
-
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #9F000F;">
-        <div class="container">
-            <a class="navbar-brand" href="http://localhost:8000/beranda">KosKu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="http://localhost:8000/beranda">Beranda<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="http://localhost:8000/Kamar">Info Kamar</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+@section('header')
+@endsection
 <!-- End Header-->
 
 <!--Isi-->
